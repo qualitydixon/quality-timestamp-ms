@@ -8,6 +8,7 @@
 
 
   <div class="container-fluid">
+    <div>Created by Mike Dixon</div>
     <blockquote>
       Timestamp Microservice -- API Project:
       <ul>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
@@ -15,9 +16,9 @@
       <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
     </blockquote>
     <h3>Example usage:</h3>
-    <code>https://my-heroku-app.herokuapp.com/February%2019,%202016</code>
+    <code>https://quality-timestamp-ms.herokuapp.com/February%2019,%202016</code>
     <br>
-    <code>https://my-heroku-app.herokuapp.com/1450137600</code>
+    <code>https://quality-timestamp-ms.herokuapp.com/1450137600</code>
     <h3>Example output:</h3>
     <code>
       { "unix": 1450137600, "natural": "February 19, 2016" }
