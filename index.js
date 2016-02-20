@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 // this middleware will be executed for every request to the app
 app.use(function (req, res, next) {
-  console.log('Time: %d', Date.now());
+  console.log('Current Time: %d', Date.now());
   next();
 });
 
@@ -19,8 +19,6 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('pages/index');
-  console.log('hello world');
-});
 
 api(app);
 
