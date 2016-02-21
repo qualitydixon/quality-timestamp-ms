@@ -1,5 +1,5 @@
 {
-  "name": "Timestamp Microservice",
+  "name": "TimestampMicroservice",
   "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
