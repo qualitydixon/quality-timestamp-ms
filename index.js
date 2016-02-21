@@ -7,18 +7,13 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
-// this middleware will be executed for every request to the app
-app.use(function (req, res, next) {
-  console.log('Current Time: %d', Date.now());
-  next();
-});
-
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('pages/index');
+});
 
 api(app);
 
